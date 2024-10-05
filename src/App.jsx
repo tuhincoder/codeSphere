@@ -1,12 +1,16 @@
 
+import { Outlet } from 'react-router-dom'
 import './App.css'
+import MainLayout from './layout/MainLayout'
 
 function App() {
 
 
   return (
     <>
-      <h1>setup complete</h1>
+      <MainLayout>
+        <Outlet></Outlet>
+      </MainLayout>
     </>
   )
 }
